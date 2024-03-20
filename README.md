@@ -5,5 +5,5 @@ progress in different roblox places.
 
 Website will have a some type of hotbar that will represent every game with unique name and unique game image
 
-## Echipa
+## Team
 Panea Evgheni
