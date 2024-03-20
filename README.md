@@ -7,3 +7,4 @@ Website will have a some type of hotbar that will represent every game with uniq
 
 ## Team
 Panea Evgheni
+Maznic Roman
