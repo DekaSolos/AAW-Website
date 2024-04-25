@@ -1,0 +1,484 @@
+@import url(/fonts.css);
+
+/* Main body settings */
+body{
+    width: 100%;
+    height: 100dvh;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(43deg, rgba(164,127,220,1) 0%, rgba(103,51,115,1) 100%);
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header settings */
+.header{
+    height: 70px;
+    width: 100%;
+
+    border-bottom: 1px solid;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.startinfo{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* Introduction Section */
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.introduction{
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.introduction-info {
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    gap: 100px;
+}
+.IntrText {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-family: 'Retron2000';
+    display: flex;
+    align-items: flex-end;
+}
+.robloxlogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 1500px;
+}
+
+/*Main page settings */
+.Mainpageinfo{
+    width: 80%;
+    height: 500px;
+    margin: 150px auto 0 150px;
+    padding: 15%;
+
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    align-items: center;
+}
+/*  third block (market filters) */
+.MarketFilters {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    flex-direction: column;
+
+    background: linear-gradient(90deg, rgba(19,48,52,1) 0%, rgba(11,24,22,1) 60%);
+}
+
+.RBXwindow{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 700px;
+    
+    border-radius: 15px;
+    overflow: hidden;
+}
+/* Container with image and the background with a name */
+
+.RBXwindow img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 700px;
+    z-index: 1;
+    border-radius: 15px;
+    border: 2px solid #1B3742;
+    user-select: none;
+    box-shadow: 0px 0px 100px #1B3742;
+    transform: scale(1.02);
+    transition: all 400ms ease;
+}
+.RBXwindow .before {
+  position: absolute;
+  width: 170px;
+  aspect-ratio: 16 / 9;
+
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+
+  background: rgb(4, 45, 45), 255, 0); /* change this background with js */
+  border-radius: 20px;
+  font-family: 'Retron2000', sans-serif;
+  z-index: 2;
+  opacity: .7;
+
+  transition: background 400ms ease;
+}
+.RBXwindow::after {
+  position: absolute;
+  content: 'RBX Accounts';
+  font-family: 'Retron2000';
+  color: white;
+  z-index: 2;
+
+}
+
+/* game slider */
+.gamecontainer {
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+
+    padding-bottom: 60px;
+}
+
+.slides {
+  overflow: hidden;
+  scroll-snap-type: x auto;
+  -webkit-overflow-scrolling: auto;
+  display: flex;
+}
+
+.slides > div {
+  width: 1200px;
+  height: 300px;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  text-align: center;
+  margin: 0 160px;
+  position: relative;
+  border-radius: 20px;
+  border: 5px solid #5099b4; /* switch this border with js */
+  background-clip: padding-box;  /* da */
+  overflow: hidden;
+  transition: border 800ms ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.gamecontainer > a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  width: 3rem;
+  height: 3rem;
+  background: rgb(101, 101, 101);
+  color: white;
+  margin: .5rem .5rem;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.gamecontainer > a:active {
+    background: black;
+}
+
+#slider-1 {
+    position: relative;
+    overflow: hidden;
+}
+  
+#slider-1 img {
+    height: 200px;
+    display: block;
+    z-index: 2;
+    border: 2px solid #1B3742;
+    border-radius: 10px;
+}
+  
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/depths.png);
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+#slider-2 {
+    position: relative;
+    overflow: hidden;
+}
+  
+#slider-2 img {
+    height: 200px;
+    display: block;
+    z-index: 2;
+    border: 2px solid #1B3742;
+    border-radius: 10px;
+}
+
+.back2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/typetown.png);
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+#slider-3 {
+    position: relative;
+    overflow: hidden;
+}
+  
+#slider-3 img {
+    height: 200px;
+    display: block;
+    z-index: 2;
+}
+
+.back3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/DecayingWinterMap.png);
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+#slider-4 {
+    position: relative;
+    overflow: hidden;
+}
+  
+#slider-4 img {
+    height: 200px;
+    display: block;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.back4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/superbg.png);
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+#slider-5 {
+    position: relative;
+    overflow: hidden;
+}
+  
+#slider-5 img {
+    height: 200px;
+    display: block;
+    z-index: 2;
+    border: 2px solid #1B3742;
+    border-radius: 10px;
+}
+
+.back5 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/sakuramap.png);
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+#slider-6 {
+    position: relative;
+    overflow: hidden;
+}
+  
+#slider-6 img {
+    height: 200px;
+    display: block;
+    z-index: 2;
+    border: 2px solid #1B3742;
+    border-radius: 10px;
+}
+
+.back6 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/bladeballmap.png);
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+#slider-7 {
+    position: relative;
+    overflow: hidden;
+}
+  
+#slider-7 img {
+    height: 200px;
+    display: block;
+    z-index: 2;
+    border: 2px solid #1B3742;
+    border-radius: 10px;
+}
+
+.back7 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/heromap.png);
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+#slider-8 {
+    position: relative;
+    overflow: hidden;
+}
+  
+#slider-8 img {
+    height: 200px;
+    display: block;
+    z-index: 2;
+    border: 2px solid #1B3742;
+    border-radius: 10px;
+}
+
+.back8 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/gpomap.png);
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+#slider-9 {
+    position: relative;
+    overflow: hidden;
+}
+  
+#slider-9 img {
+    height: 200px;
+    display: block;
+    z-index: 2;
+    border: 2px solid #1B3742;
+    border-radius: 10px;
+}
+
+.back9 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/autmap.png);
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+#slider-9 {
+    position: relative;
+    overflow: hidden;
+}
+  
+#slider-9 img {
+    height: 200px;
+    display: block;
+    z-index: 2;
+    border: 2px solid #1B3742;
+    border-radius: 10px;
+}
+
+.back9 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/autmap.png);
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+#slider-10 {
+    position: relative;
+    overflow: hidden;
+}
+  
+#slider-10 img {
+    height: 200px;
+    display: block;
+    z-index: 2;
+    border: 2px solid #1B3742;
+    border-radius: 10px;
+}
+
+.back10 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/ybamap.png);
+    background-size: cover;
+    filter: blur(2px);
+    z-index: 1;
+    transform: scale(1.2);
+}

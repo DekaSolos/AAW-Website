@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../SwitchGameSlide"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "practice"
+	}
+}
